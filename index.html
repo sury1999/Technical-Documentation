@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta charset="utf-8">
+  <title> Technical Documentation Page </title>
+  <link href="styling.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"> </script>
+
+
+  <nav id="navbar">
+    <header> <h3> CSS Documentation </h3> </header><br>
+    <a href="#Basic_rule_syntax" class="nav-link"> Basic rule syntax</a><br><br><br>
+    <a href="#Keyword_index" class="nav-link"> Keyword index</a><br><br><br>
+    <a href="#Selectors" class="nav-link"> Selectors</a><br><br><br>
+    <a href="#Concepts" class="nav-link"> Concepts</a><br><br><br>
+    <a href="#DOM-CSS" class="nav-link"> DOM-CSS</a><br><br><br>
+
+  </nav>
+
+
+  <main id="main-doc">
+
+    <section id="Basic_rule_syntax" class="main-section">
+      <header> <h2>Basic rule syntax </h2></header>
+      <p>The syntax for each specified value depends on the data type defined for each specified property.</p>
+      <p>Be aware that any syntax error in a rule definition invalidates the entire rule. Invalid rules are ignored by the browser. Note that CSS rule definitions are entirely (ASCII) text-based, whereas DOM-CSS / CSSOM (the rule management system) is object-based.</p>
+      <code>background-image: url("../../media/examples/lizard.png"); //for setting background images</code>
+      <code>padding: 10px 50px 20px; //for adding padding to elements </code>
+      <code>color: #00ff00; //for setting text-color </code>
+    </section>
+<br>
+    <section id="Keyword_index" class="main-section">
+      <header> <h2>Keyword index </h2></header>
+      <p>Note: The property names in this index do not include the JavaScript names where they differ from the CSS standard names.</p>
+      <p> 5 Common and important keywords</p>
+      <ul>
+        <li>Align-items</li>
+        <li>Background-image</li>
+        <li>Color</li>
+        <li>Font-Family</li>
+        <li>Margin</li>
+      </ul>
+    </section>
+<br>
+    <section id="Selectors" class="main-section">
+      <header> <h2> Selectors </h2> </header>
+      <p>Basic selectors are fundamental selectors; these are the most basic selectors that are frequently combined to create other, more complex selectors.</p>
+      <p>Selector list A, B Specifies that both A and B elements are selected. This is a grouping method to select several matching elements.</p>
+      <p>Combinators are selectors that establish a relationship between two or more simple selectors, such as "A is a child of B" or "A is adjacent to B."</p>
+      <code>/* The element with id="demo" */<br>
+            #demo {<br>
+              border: red 2px solid;<br>
+            }<br>
+      </code>
+      <code>/* Paragraphs that come immediately after any image */<br>
+            img + p {<br>
+                font-weight: bold;<br>
+              }<br>
+      </code>
+    </section>
+<br>
+    <section id="Concepts" class="main-section">
+      <header> <h2> Concepts </h2> </header>
+      <p>Values: Actual value, Computed value, Initial value, Resolved value, Specified value, Used value</p>
+      <p>Layout: Block formatting context, Box model, Containing block, Layout mode, Margin collapsing, Replaced elements, Stacking context, Visual formatting model</p>
+    </section>
+<br>
+    <section id="DOM-CSS" class="main-section">
+      <header> <h2> DOM-CSS </h2> </header>
+      <p>Major object types: DocumentOrShadowRoot.styleSheets, styleSheets[i].cssRules, cssRules[i].cssText (selector & style), cssRules[i].selectorText, HTMLElement.style, HTMLElement.style.cssText (just style), Element.className, Element.classList</p>
+      <p>Important methods: CSSStyleSheet.insertRule(), CSSStyleSheet.deleteRule()</p>
+    </section>
+
+
+
+
+
+  </main>
+
+
+</body>
+
+
+</html>
